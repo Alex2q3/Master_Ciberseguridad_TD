@@ -38,7 +38,7 @@ jobs:
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{secrets.HEROKU_SECRET}}
-        heroku_app_name: "td-masterciberseguridad"
+        heroku_app_name: "0ac9a80f-5127-47e4-b742-4b02fcf69fbb"
         heroku_email:  ${{secrets.HEROKU_EMAIL}}
         buildpack: 'heroku/python'
         usedocker: false
