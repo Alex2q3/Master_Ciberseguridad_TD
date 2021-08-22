@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 logging.basicConfig(level=logging.DEBUG)
 
-
 #@app.route("/")
 #def hello_world():
 #    return "<p>Hello, World!</p>"
@@ -46,7 +45,6 @@ def get_price(ticker):
         return Response({}, status=404, mimetype='application/json')
     except Exception as e:
         app.logger.error("Exception occurred", exc_info=True)
-
 
 if __name__ == '__main__':
     app.run()
